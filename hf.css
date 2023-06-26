@@ -1,0 +1,132 @@
+/*header*/
+nav {
+	background-color: #fff;
+	color: #000000;
+	padding: 10px;
+    box-shadow:  3px 6px rgba(0, 0, 0, 0.16);
+}
+.allmenu{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto ;
+}
+.dropmenu{
+    text-decoration: none;
+    color: #000000;
+}
+section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section>ul>li {
+	display: inline-block;
+    position: relative;
+	margin-right: 10px;
+}
+.dropmenu{
+    width: 80vw;
+    display: none;
+    margin: auto;
+    background-color: var(--main-color);
+    position: absolute;
+    object-fit: cover;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2vh;
+    position: fixed;
+    left: 10%;
+    top: 55px;
+}
+
+section>ul>li:hover .dropmenu {
+        display: grid;
+}
+section ul>li:hover{
+        color: #493bc2;
+}
+
+section a {
+	color: #fff;
+	text-decoration: none;
+}
+.icons{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+.icons form, a{
+    margin: 0% 2%;
+}
+.search{
+    width: 300px;
+    height: 26px;
+    display: flex;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.search i{
+    padding: 6px;
+    font-size: 0.8em;
+}
+.search input{
+    height: 26px;
+    border: none;
+}
+.icon{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+}
+
+/* body*/
+body{
+    font-family: rubik, sans-serif;
+	margin: 0;
+	padding: 0
+}
+/*footer*/
+footer {
+	background-color: #ffffff;
+	color: #fff;
+	padding: 100px;
+	text-align: center;
+    border:none;
+}
+.footerc{
+    width: 20%;
+}
+.footer-items{
+    list-style-type: none;
+    padding: 2%;
+    display :grid;
+    grid-template-columns:auto auto auto;
+    gap:10px;
+}
+.footer-items{
+    color: black;
+    font-family: var(--font);
+    font-size: 14pt;
+    font-weight: 500;
+}
+.footer-items{
+    margin: 0;
+    color: green;
+    font-family: var(--font);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+#c{
+    padding: 0 10%;
+    background-color: var(--main-color);
+}
+#c p{
+    width: 80%;
+    padding: 1% 0%;
+    color: white;
+    font-family: var(--font);
+    font-size: 0.9em;
+    font-weight: 400;
+    border-top: 1px solid black;
+}   
